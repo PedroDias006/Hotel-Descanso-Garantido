@@ -91,7 +91,7 @@ cd src
 2. Compile:
 
 ```
-gcc main.c quarto.c hospede.c reserva.c estadia.c utils.c -o hotel.exe
+    gcc main.c quarto.c cliente.c estadia.c funcionario.c -o hotel.exe
 ```
 
 3. Execute:
