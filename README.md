@@ -15,7 +15,7 @@ TRABALHO PRÁTICO FEITO POR PEDRO DIAS E VICTHOR GUILHERME PARA AS MATÉRIAS DE 
 
 ---
 
-## 📊 **Status Geral do Projeto**
+##  **Status Geral do Projeto**
 
 **Data de Entrega:** 02/07/2025
 **Status Final:** ✅ **100% IMPLEMENTADO E TESTADO**

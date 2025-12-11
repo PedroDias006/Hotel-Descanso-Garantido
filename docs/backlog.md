@@ -101,7 +101,7 @@ Victhor Guilherme
 
 ---
 
-# 🏗️ **SPRINT 4 – Estadia + Finalização**
+# **SPRINT 4 – Estadia + Finalização**
 
 ### Objetivo
 
