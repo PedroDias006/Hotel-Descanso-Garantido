@@ -22,11 +22,11 @@ TRABALHO PRÁTICO FEITO POR PEDRO DIAS E VICTHOR GUILHERME PARA AS MATÉRIAS DE 
 
 | Módulo                       | Responsável | Status      | 
 | ---------------------------- | ----------- | ----------- | 
-| 🛏️ Quartos                  | Victhor       | ✅ Concluído | 
+| 🛏️ Quartos                  | Pedro Dias       | ✅ Concluído | 
 | 👤 Hóspedes                  | Victhor     | ✅ Concluído | 
 | 📅 Reservas                  | Victhor     | ✅ Concluído | 
 | 💳 Estadia / Baixa           | Victhor     | ✅ Concluído |
-| 📂 Banco de Dados (Arquivos) | Victhor    | ✅ Concluído |
+| 📂 Banco de Dados (Arquivos) | Pedro Dias   | ✅ Concluído |
 
 
 ---
