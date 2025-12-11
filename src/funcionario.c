@@ -142,3 +142,7 @@ int funcionario_buscar_por_nome(const char *nome, Funcionario *out) {
     fclose(f);
     return 0;
 }
+
+// =======================================================
+// Salva funcionário no arquivo binário
+// =======================================================
