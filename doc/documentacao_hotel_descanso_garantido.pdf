@@ -1,0 +1,149 @@
+Hotel Descanso Garantido
+Trabalho Interdisciplinar – Fundamentos de Engenharia de Software e Algoritmos e Estruturas de Dados I
+PUC Minas – 2025
+
+Integrantes
+
+Pedro Henrique Dias Pereira
+
+Victhor Guilherme Santos Loiola
+
+Descrição Geral
+O sistema Hotel Descanso Garantido foi desenvolvido em linguagem C para informatizar o controle de clientes, funcionários, quartos e estadias do hotel, eliminando o uso de planilhas manuais e reduzindo erros operacionais.
+O projeto utiliza modularização, arquivos binários para persistência de dados e testes automatizados usando a biblioteca MUnit.
+
+Estrutura do Projeto
+/src – Implementações (.c)
+/include – Arquivos de cabeçalho (.h)
+/data – Arquivos binários usados pelo sistema
+/tests – Testes automatizados
+documentacao_hotel_descanso_garantido.pdf
+README.md
+
+FUNCIONALIDADES IMPLEMENTADAS
+
+Módulo de Clientes
+Permite:
+
+Cadastro de clientes
+
+Listagem geral
+
+Busca por nome
+
+Busca por código
+Armazenamento em clientes.dat
+Regra: não pode haver dois clientes com o mesmo código.
+
+Módulo de Funcionários
+Permite:
+
+Cadastro
+
+Listagem
+
+Busca por nome
+
+Busca por código
+Armazenamento em funcionarios.dat
+Regras: código único e salário válido.
+
+Módulo de Quartos
+Permite:
+
+Cadastro
+
+Consulta por número
+
+Listagem
+
+Controle de disponibilidade
+Armazenamento em quartos.dat
+Regras: número único por quarto; novos quartos começam desocupados.
+
+Módulo de Estadias
+Registro de estadias:
+
+Confere cliente existente
+
+Confere quarto existente
+
+Valida disponibilidade
+
+Valida datas
+
+Impede conflitos de período
+
+Calcula quantidade de diárias
+
+Marca o quarto como ocupado
+
+Baixa de estadias:
+
+Calcula valor total
+
+Libera o quarto
+
+Finaliza a estadia
+
+Soma pontos de fidelidade
+Armazenamento em estadias.dat
+
+TESTES AUTOMATIZADOS
+Foram implementados testes com MUnit cobrindo:
+
+Geração de códigos
+
+Validação de datas
+
+Cálculo de diárias
+
+Verificação de existência de quarto
+
+Exemplo de execução:
+gcc tests/test_cliente.c src/cliente.c -o cliente_test -lmunit
+./cliente_test
+
+METODOLOGIA UTILIZADA – SCRUM
+
+Sprint 1
+
+Estrutura inicial do projeto
+
+Implementação do módulo de clientes
+
+Sprint 2
+
+Módulo de funcionários
+
+Módulo de quartos
+
+Sprint 3
+
+Registro de estadias
+
+Validações de regras de negócio
+
+Sprint 4
+
+Baixa de estadias
+
+Testes automatizados
+
+Finalização da documentação
+
+DOCUMENTAÇÃO
+Arquivo final: documentacao_hotel_descanso_garantido.pdf
+
+CONCLUSÃO
+O sistema desenvolvido atende todos os requisitos do trabalho interdisciplinar:
+
+Modularização completa
+
+Persistência em arquivos binários
+
+Regras de negócio corretamente aplicadas
+
+Testes automatizados funcionando
+
+Documentação formal entregue
