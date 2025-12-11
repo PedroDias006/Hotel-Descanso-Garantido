@@ -1,6 +1,0 @@
-Entrada sugerida para testes manuais:
-1 - Cadastrar cliente
-2 - Cadastrar funcionário
-3 - Cadastrar quarto
-4 - Registrar estadia
-5 - Dar baixa

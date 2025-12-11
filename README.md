@@ -1,105 +1,121 @@
-# Hotel Descanso Garantido
+TRABALHO PRÁTICO FEITO POR PEDRO DIAS E VICTHOR GUILHERME PARA AS MATÉRIAS DE FUNDAMENTOS DE ENGENHARIA DE SOFTWARE E ALGORITMO E ESTRUTURA DE DADOS :)
 
-Trabalho Interdisciplinar – Fundamentos de Engenharia de Software e Algoritmos e Estruturas de Dados I  
-PUC Minas – 2025
+# 🏨 **Sistema de Hotel – Hotel Descanso Garantido**
 
-## Integrantes
-- Pedro Henrique Dias Pereira  
-- Victhor Guilherme Santos Loiola  
+## Trabalho Prático — 2025/1 ✅ **CONCLUÍDO**
 
 ---
 
-## Descrição Geral
+## 👥 **Equipe**
 
-O sistema Hotel Descanso Garantido foi desenvolvido em linguagem C com o objetivo de informatizar o controle de clientes, funcionários, quartos e estadias do hotel, substituindo planilhas manuais e reduzindo erros operacionais.
-
-O projeto utiliza modularização, arquivos binários para persistência de dados e testes automatizados com a biblioteca MUnit.
-
----
-
-## Estrutura do Projeto
+| Membro                | Responsável pelo módulo                           | Status         |
+| --------------------- | ------------------------------------------------- | -------------- |
+| **Pedro Dias**        | Módulo de Quartos e Responsável do Banco de Dados | ✅ IMPLEMENTADO |
+| **Victhor Guilherme** | Módulo de Hóspedes, Reservas e Baixa de Estadia   | ✅ IMPLEMENTADO |
 
 ---
 
-# Funcionalidades Implementadas
+## 📊 **Status Geral do Projeto**
 
-## 1. Módulo de Clientes
+**Data de Entrega:** 02/07/2025
+**Status Final:** ✅ **100% IMPLEMENTADO E TESTADO**
 
-Permite:
-- Cadastro de clientes  
-- Listagem geral  
-- Busca por nome  
-- Busca por código  
+| Módulo                       | Responsável | Status      | 
+| ---------------------------- | ----------- | ----------- | 
+| 🛏️ Quartos                  | Victhor       | ✅ Concluído | 
+| 👤 Hóspedes                  | Victhor     | ✅ Concluído | 
+| 📅 Reservas                  | Victhor     | ✅ Concluído | 
+| 💳 Estadia / Baixa           | Victhor     | ✅ Concluído |
+| 📂 Banco de Dados (Arquivos) | Victhor    | ✅ Concluído |
 
-Armazenamento: `clientes.dat`  
-Regras:  
-- Código único para cada cliente  
-
----
-
-## 2. Módulo de Funcionários
-
-Permite:
-- Cadastro  
-- Listagem  
-- Busca por nome  
-- Busca por código  
-
-Armazenamento: `funcionarios.dat`  
-Regras:
-- Código único  
-- Salário válido  
 
 ---
 
-## 3. Módulo de Quartos
+# 📋 **Descrição do Projeto**
 
-Permite:
-- Cadastro de quartos  
-- Consulta por número  
-- Listagem  
-- Controle de disponibilidade (ocupado/desocupado)
+O **Hotel Descanso Garantido** é um sistema completo para gestão de um hotel utilizando linguagem **C**, com manipulação de dados por meio de arquivos.
 
-Armazenamento: `quartos.dat`  
-Regras:
-- Não permite números de quarto duplicados  
-- Novo quarto sempre inicia como desocupado  
+O sistema permite:
 
----
+* Cadastrar, buscar, editar e listar **hóspedes**
+* Cadastrar e gerenciar **quartos** do hotel
+* Registrar **reservas**
+* Registrar **estadia**
+* Realizar **baixa de estadia**, com cálculo automático do valor total
+* Manter banco de dados local através de arquivos
+* Oferecer menus organizados por tipo de operação
 
-## 4. Módulo de Estadias
-
-### Registro de estadias
-
-Inclui:
-- Verificação de cliente existente  
-- Verificação de quarto existente  
-- Validação de disponibilidade  
-- Validação de datas  
-- Prevenção de conflitos com outras estadias  
-- Cálculo automático da quantidade de diárias  
-- Marcação do quarto como ocupado  
-
-### Baixa de estadias
-
-Inclui:
-- Cálculo do valor total  
-- Liberação do quarto  
-- Finalização da estadia  
-- Acúmulo de pontos de fidelidade  
-- Atualização dos arquivos binários  
-
-Armazenamento: `estadias.dat`
 
 ---
 
-# Testes Automatizados
+# 🏗️ **Estrutura do Projeto**
 
-Foram desenvolvidos testes utilizando a biblioteca MUnit.  
-Abrangência dos testes:
+```
+/
+├── README.md                          ✅ Documentação principal
+├── requisitos_finais.md               ✅ Requisitos para o trabalho final
+├── .gitignore                         ✅ Arquivos ignorados pelo Git
+│
+├── include/                           ✅ Arquivos de cabeçalho (.h)
+│   ├── quarto.h                       ✅ Gestão de quartos
+│   ├── funcionario.h                  ✅ Gestão de funcionários                  
+│   ├── estadia.h                      ✅ Controle de estadias
+│   └── cliente.h                      ✅ Gestão de clientes
+│
+├── src/                               ✅ Código-fonte principal (.c)
+│   ├── quarto.c                       ✅ Implementação de quartos
+│   ├── funcionario.c                  ✅ Implementação de funcionários                
+│   ├── estadia.c                      ✅ Implementação da baixa e estadia
+│   ├── cliente.c                      ✅ Implementação de clientes
+│   └── main.c                         ✅ Menu principal
+│
+├── docs/                              ✅ Documentação geral
+│   ├── backlog.md                     ✅ Backlog completo.
+│   ├── funcionalidades.md             ✅ Descrição técnica das funções.
+│   └── docs_indivuais.md              ✅ Documentações feitos pelos autores.
+    ├── casos.md                       ✅ Casos de testes feitos pelos autores.        
+│   └── planejamento.md                ✅ Planejamento dos casos de testes feito pelos autores.
 
-- Geração de códigos  
-- Validação de datas  
-- Cálculo de diárias  
-- Verificação de existência de quarto
+```
+
+---
+
+# 🚀 **Como Compilar e Executar**
+
+1. Entre na pasta `src`:
+
+```
+cd src
+```
+
+2. Compile:
+
+```
+gcc main.c quarto.c hospede.c reserva.c estadia.c utils.c -o hotel.exe
+```
+
+3. Execute:
+
+```
+./hotel.exe
+```
+---
+
+# 🧪 **Testes**
+
+* Testes manuais realizados em todos os módulos
+* Conferência dos arquivos de banco de dados
+* Verificação de cálculos de reserva e estadia
+* Testes de exceção (hóspede inexistente, quarto ocupado etc.)
+
+---
+
+# 🎯 **Objetivos Alcançados**
+
+* Aprendizagem da manipulação de arquivos em C
+* Organização de projeto seguindo boas práticas
+* Aplicação de estrutura modular (múltiplos .c/.h)
+* Documentação completa do projeto
+* Aplicação parcial da metodologia Scrum
+* Entrega limpa, organizada e funcional
 
